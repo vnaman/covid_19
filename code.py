@@ -36,6 +36,3 @@ for each in country_dict['response']:
         print(f'Number of new cases : {new_cases}')
         print(f'Total number of cases : {total_cases}')
         print(f'Total number of deaths : {total_deaths}')
-
-def wrong_func():
-    print('this is not supposed to be here')
