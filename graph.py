@@ -1,3 +1,4 @@
+''' This file shows the number of cases and deaths for the selected country and plots a corresponding graph '''
 import requests
 import datetime
 import matplotlib.pyplot as plt
@@ -51,12 +52,22 @@ print(f'Total Deaths --------- {total_deaths}')
 print(f'Total Cases ---------------------------------------  {total_cases}')
 
 
-width = 0.3
-plt.bar(death_dict.keys(), death_dict.values(), width, color = 'g')
-plt.show()
+choice = input("Do you want to see a graph for the data. type 'Y' for yes and 'N' for no")
+if choice == 'Y' or 'y':
+    width = 0.3
+    plt.bar(death_dict.keys(), death_dict.values(), width, color = 'g')
+    plt.xlabel('Dates')
+    plt.ylabel('Deaths')
+    plt.show()
 
-plt.bar(cases_dict.keys(), cases_dict.values(), width, color = 'k')
-plt.show()
+    plt.bar(cases_dict.keys(), cases_dict.values(), width, color = 'k')
+    plt.xlabel('Dates')
+    plt.ylabel('Cases')
+    plt.show()
+
+
+
+
 
 
 
