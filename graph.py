@@ -8,7 +8,7 @@ url_for_history = "https://covid-193.p.rapidapi.com/history"
 
 headers = {
     'x-rapidapi-host': "covid-193.p.rapidapi.com",
-    'x-rapidapi-key': "e1608910c9msh3d6426308d4b3b9p15de94jsn7fc358704657"
+    'x-rapidapi-key': "my key here"
     }
 total_cases = 0
 total_deaths = 0
@@ -53,7 +53,7 @@ print(f'Total Cases ---------------------------------------  {total_cases}')
 
 
 choice = input("Do you want to see a graph for the data. type 'Y' for yes and 'N' for no")
-if choice == 'Y' or 'y':
+if choice == 'Y':
     width = 0.3
     plt.bar(death_dict.keys(), death_dict.values(), width, color = 'g')
     plt.xlabel('Dates')
