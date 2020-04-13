@@ -12,7 +12,7 @@ url_for_statistics = "https://covid-193.p.rapidapi.com/statistics"
 
 headers = {
     'x-rapidapi-host': "covid-193.p.rapidapi.com",
-    'x-rapidapi-key': "e1608910c9msh3d6426308d4b3b9p15de94jsn7fc358704657"
+    'x-rapidapi-key': ""
     }
 
 
